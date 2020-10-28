@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import loadable from '@loadable/component';
 import { Helmet } from 'react-helmet';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { Link } from 'react-scroll';
-import { useElementScroll, useCycle } from 'framer-motion';
+import { useViewportScroll, useCycle } from 'framer-motion';
 
 import { colors, shadows, media, themes, typography } from 'utils';
 
@@ -24,6 +24,11 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -31,6 +36,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.secondary};
     overflow: hidden;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 `;
 
@@ -78,18 +86,10 @@ const Guidelines = styled.div`
   `}
 `;
 
-const RootWrapper = styled.main`
-  position: relative;
-  height: 100vh;
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  overflow-x: hidden;
-`;
-
 const IndexPage = () => {
   const [themeMode, toggleThemeMode] = useCycle('light', 'dark');
-  const rootRef = useRef();
-  const { scrollYProgress } = useElementScroll(rootRef);
+
+  const { scrollYProgress } = useViewportScroll();
 
   return (
     <ThemeProvider
@@ -111,20 +111,20 @@ const IndexPage = () => {
       </Helmet>
       <GlobalStyle />
       <Navbar>
-        <Logo to="home" containerId="root" smooth>
+        <Logo to="home" smooth>
           tulski
         </Logo>
       </Navbar>
+      <ThemeToggle themeMode={themeMode} toggleThemeMode={toggleThemeMode} />
       <Guidelines />
       <DotsNavigation scrollYProgress={scrollYProgress} />
-      <RootWrapper id="root" ref={rootRef}>
-        <ThemeToggle themeMode={themeMode} toggleThemeMode={toggleThemeMode} />
+      <SwipeArrow scrollYProgress={scrollYProgress} />
+      <main>
         <HomeSection />
-        <SwipeArrow scrollYProgress={scrollYProgress} />
         <AboutSection />
         <ProjectsSection />
         <ContactSection />
-      </RootWrapper>
+      </main>
     </ThemeProvider>
   );
 };

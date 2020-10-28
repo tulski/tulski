@@ -118,6 +118,7 @@ const AboutSection = () => {
     loopCount: Infinity,
   };
 
+  // eslint-disable-next-line consistent-return
   useEffect(() => {
     if (visibility) {
       const typed = new Typed(typedRef.current, options);
@@ -127,7 +128,7 @@ const AboutSection = () => {
   }, [visibility, options, imageControls]);
 
   return (
-    <SectionTemplate id="aboutMe">
+    <SectionTemplate name="about">
       <StyledParallaxContainer translateRange={[5, -5]}>
         {({ translateX, translateY }) => (
           <AboutWrapper ref={wrapperRef} style={{ translateX, translateY }}>
@@ -147,13 +148,7 @@ const AboutSection = () => {
               <Paragraph gray semiBold>
                 based in Warsaw, currently looking for a job
               </Paragraph>
-              <Button
-                as={Link}
-                to="contact"
-                containerId="root"
-                smooth
-                name="contact"
-              >
+              <Button as={Link} to="contact" smooth name="contact">
                 contact me!
               </Button>
             </AboutTextWrapper>

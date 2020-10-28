@@ -160,7 +160,7 @@ const WorkSection = () => {
   );
 
   return (
-    <StyledSectionTemplate id="projects">
+    <StyledSectionTemplate name="projects">
       <SectionHeading>
         work.<strong>work.</strong>work.<strong>work.</strong>
         work.

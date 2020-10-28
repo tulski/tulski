@@ -6,21 +6,16 @@ import { useIntersectionObserver } from '@researchgate/react-intersection-observ
 import { Link } from 'react-scroll';
 import { media } from 'utils';
 
-const StyledSvg = styled(motion.svg).attrs({
-  viewBox: '0 0 14 8',
-  fill: 'none',
-  xmlns: 'http://www.w3.org/2000/svg',
-})`
+const StyledLink = styled(Link)`
   position: absolute;
   left: calc(50% - 1.5rem);
-  bottom: 2rem;
+  top: calc(100vh - 4rem);
   width: 3rem;
   stroke: ${({ theme }) => theme.secondary};
   cursor: pointer;
 
   ${media.mobileL`
     left: calc(50% - 1.25rem);
-    bottom: 6rem;
     width: 2.5rem;
   `}
 `;
@@ -43,11 +38,18 @@ const SwipeArrow = ({ scrollYProgress }) => {
   const [ref] = useIntersectionObserver(handleChange);
 
   return (
-    <Link to="aboutMe" containerId="root" smooth>
-      <StyledSvg ref={ref} animate={arrowControls} style={{ opacity }}>
+    <StyledLink to="about" smooth>
+      <motion.svg
+        viewBox="0 0 14 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        ref={ref}
+        animate={arrowControls}
+        style={{ opacity }}
+      >
         <path d="M13 1L7 7L1 1" strokeLinecap="round" strokeLinejoin="round" />
-      </StyledSvg>
-    </Link>
+      </motion.svg>
+    </StyledLink>
   );
 };
 

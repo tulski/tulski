@@ -47,7 +47,7 @@ const Subtitle = styled.h4`
 `;
 
 const HeroSection = () => (
-  <SectionTemplate id="home">
+  <SectionTemplate name="home">
     <HomeWrapper>
       <StyledParallaxContainer
         translateRange={[-20, 20]}

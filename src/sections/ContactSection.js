@@ -62,7 +62,7 @@ const LightParagraph = styled(Paragraph)`
 `;
 
 const ContactSection = () => (
-  <StyledSectionTemplate id="contact">
+  <StyledSectionTemplate name="contact">
     <StyledSectionHeading>contact.</StyledSectionHeading>
     <StyledMatrix />
     <ContactsWrapper>
