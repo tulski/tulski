@@ -25,10 +25,6 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  html {
-    overflow-x: hidden;
-  }
-
   body {
     margin: 0;
     padding: 0;
@@ -36,9 +32,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.secondary};
     overflow: hidden;
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
 `;
 
