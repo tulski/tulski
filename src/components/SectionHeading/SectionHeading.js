@@ -2,10 +2,12 @@ import styled from 'styled-components';
 import { media } from 'utils';
 
 const SectionHeading = styled.h3`
+  max-width: 100%;
   margin: 2rem 0;
   grid-column: span 2;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: ${({ theme }) => theme.fontSize.extraBold};
+  overflow-x: hidden;
 
   & strong {
     color: ${({ theme }) => theme.red};

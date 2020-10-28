@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Mulish', sans-serif;
     background-color: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.secondary};
-    overflow: hidden;
+    overflow: auto;
   }
 `;
 

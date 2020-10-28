@@ -38,6 +38,7 @@ const AboutWrapper = styled(motion.div)`
 const AboutTextWrapper = styled.div`
   flex: 0 0 66.666%;
   max-width: 66.666%;
+  overflow: visible;
 
   ${media.tablet`
   max-width:100%;

@@ -15,6 +15,7 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 
   ${media.mobileL`
+    top: calc(100vh - 8rem);
     left: calc(50% - 1.25rem);
     width: 2.5rem;
   `}
