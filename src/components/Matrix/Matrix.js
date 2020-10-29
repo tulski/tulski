@@ -91,12 +91,12 @@ const Matrix = ({ className }) => {
 
   const handleMouseMove = (event) => {
     x.set(
-      event.pageX -
+      event.clientX -
         containerRef.current.getBoundingClientRect().x -
         boxSize / 2,
     );
     y.set(
-      event.pageY -
+      event.clientY -
         containerRef.current.getBoundingClientRect().y -
         boxSize / 2,
     );
