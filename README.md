@@ -18,5 +18,5 @@
 ## Check out my projects! 🧨
 
 [website]: https://tulski.com
-[instagram]: https://instagram.com/to_tuulo
+[instagram]: https://instagram.com/to_tulo
 [linkedin]: https://www.linkedin.com/in/tulski/
