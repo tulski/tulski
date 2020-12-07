@@ -6,7 +6,7 @@
 - 🐣 wanna-be web developer 
 - 👯 cybersecurity student
 - ☕️ coffee geek
-- 🕵🏼‍ looking for a job
+- 🔎 looking for a job
 - 📌 based in Warsaw, Poland
 
 ### Connect with me:
