@@ -6,7 +6,8 @@
 - 🐣 wanna-be web developer 
 - 👯 cybersecurity student
 - ☕️ coffee geek
-- ⚡ Fun fact: I love to draw and play guitar / drums
+- 🕵🏼‍ looking for a job
+- 📌 based in Warsaw, Poland
 
 ### Connect with me:
 
@@ -30,6 +31,9 @@
 <img align="left" alt="Puppeteer" width="26px" src="https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png" />
 <img align="left" alt="MongoDB" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
 <img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
+
+<br />
+<br />
 
 ---
 
