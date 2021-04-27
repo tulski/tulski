@@ -1,6 +1,6 @@
 ### ayy yo, [tulski][website] here 👋
 
-![tulski](./tulski_cover.png)
+![tulski](./tulski-cover.png)
 
 ## pretending i know what im doing
 
@@ -10,4 +10,4 @@
 - 📌 based in Warsaw, Poland
 
 [website]: https://tulski.com
-[cover]: ./tulski_cover.png
+[cover]: ./tulski-cover.png
