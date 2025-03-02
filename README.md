@@ -1,13 +1,7 @@
-### ayy yo, [tulski][website] here 👋
+## hello, [tulski][website] here 👋
 
-![tulski][cover]
-
-## pretending i know what im doing
-
-- 🐣 junior developer
-- 👯 cybersecurity student
+- 🐣 pretending i know what im doing
 - ☕️ coffee geek
 - 📌 based in Warsaw, Poland
 
 [website]: https://tulski.com
-[cover]: ./tulski-github-cover.png
